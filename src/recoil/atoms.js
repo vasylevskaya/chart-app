@@ -25,8 +25,8 @@ export const chartDataState = atom({
       {
         label: 'Dataset 2',
         data: [10, 3, '-6', 17, '-20'],
-        borderColor: 'rgb(53, 162, 235)',
-        backgroundColor: 'rgba(53, 162, 235, 0.5)',
+        borderColor: 'rgb(181, 53, 235)',
+        backgroundColor: 'rgba(181, 53, 235, 0.5)',
       }
     ]
   },
