@@ -1,5 +1,18 @@
-body {
+@import url(./styles/media.scss);
+
+@import url(./styles/app.scss);
+@import url(./styles/sidebar.scss);
+@import url(./styles/chart.scss);
+
+html,
+body,
+#root {
   margin: 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -11,3 +24,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+div {
+  box-sizing: border-box;
+}
+

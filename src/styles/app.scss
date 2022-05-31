@@ -1,0 +1,9 @@
+.app {
+  display: flex;
+  text-align: center;
+  height: 100%;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+  }
+}

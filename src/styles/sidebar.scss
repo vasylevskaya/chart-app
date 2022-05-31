@@ -1,0 +1,97 @@
+.sidebar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 15px;
+  width: 20%;
+  height: 100%;
+  color: white;
+  background-color: rgba(33, 33, 33, 0.752);
+  z-index: 100;
+
+  @media (max-width: 900px) {
+    width: 100%;
+    height: 10%;
+    padding: 5px;
+  }
+
+  &_button-toggle {
+    height: 50px;
+    width: 50px;
+    border: none;
+
+    &.active {
+      background: transparent url('../images/white-arrow-down.png') no-repeat center;
+    }
+
+    &.unactive {
+      background: transparent url('../images/white-arrow-up.png') no-repeat center;
+    }
+  }
+
+  &_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: auto;
+    height: 100%;
+
+    &.active {
+      @media (max-width: 900px) {
+        top: 100%;
+        position: absolute;
+        height: min-content;
+        width: 100%;
+        padding: 20px 10px;
+        background-color: rgba(33, 33, 33, 0.752);
+      }
+    }
+
+    .chart-type-picker {
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+  
+      &_input {
+        text-align: left;
+        margin-bottom: 10px;
+      }
+    }
+
+    .chart-data-setter {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  
+      input {
+        width: 90%;
+        padding: 10px;
+        margin: 5px 0;
+        border-radius: 10px;
+        box-sizing: border-box;
+      }
+  
+      &_values-control {
+        margin: 0 0 10px 0;
+        display: flex;
+        gap: 15px;
+  
+        button {
+          cursor: pointer;
+          border: none;
+          background: none;
+          color: white;
+          font-size: 30px;
+        }
+  
+        button:disabled {
+          cursor: initial;
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
